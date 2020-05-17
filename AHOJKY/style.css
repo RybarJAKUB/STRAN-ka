@@ -1,0 +1,1414 @@
+
+body{
+    background-image: url(img/back.jpg);
+    margin: 0px;
+    padding: 0;
+}
+/*pc*/
+@media only screen and (min-width: 1024px){
+
+  .grid-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px 75px 550px 30px 480px 75px;
+  grid-template-areas: "LOGO HLADAT HLADAT KOSIK" "PROFIL TOVAR KONTAKTY SITEMAPA" "AKCIE AKCIE AKCIE AKCIE" "OT OT OT OT" "INDEXOBRAZKY INDEXOBRAZKY INDEXOBRAZKY INDEXOBRAZKY" "PASIK PASIK PASIK PASIK";
+  min-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
+  width:50%;      
+}
+.grid-sitemapa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px 75px 400px 30px 200px 75px;
+  grid-template-areas: "LOGO HLADAT HLADAT KOSIK" "PROFIL TOVAR KONTAKTY SITEMAPA" "OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA" "OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA" "OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA" "PASIK PASIK PASIK PASIK";
+  min-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
+  width:50%; 
+}
+.grid-kontakty {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px 75px 830px 30px 200px 75px;
+  grid-template-areas: "LOGO HLADAT HLADAT KOSIK" "PROFIL TOVAR KONTAKTY SITEMAPA" "KONTAKT KONTAKT KONTAKT KONTAKT" "KONTAKT KONTAKT KONTAKT KONTAKT" "KONTAKT KONTAKT KONTAKT KONTAKT" "PASIK PASIK PASIK PASIK";
+  min-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
+  width:50%; 
+}
+.grid-tovar {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 75px 75px 50px 75px 255px 170px 100px 75px;
+  grid-template-areas: "LOGO LOGO HLADAT HLADAT HLADAT HLADAT KOSIK KOSIK" "PROFIL PROFIL TOVAR TOVAR KONTAKTY KONTAKTY SITEMAPA SITEMAPA" ". . . . . . . ." ". . . . . . . ." ". TOVAR1 TOVAR1 TOVAR2 TOVAR2 TOVAR3 TOVAR3 ." ". POPIS1 POPIS1 POPIS2 POPIS2 POPIS3 POPIS3 ." ". . . . . . . ." "PASIK PASIK PASIK PASIK PASIK PASIK PASIK PASIK";
+  min-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
+  width:50%; 
+ }
+.grid-kosik {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 75px 75px 50px 50px 256px 30px 50px 100px 75px;
+  grid-template-areas: "LOGO LOGO HLADAT HLADAT HLADAT HLADAT KOSIK KOSIK" "PROFIL PROFIL TOVAR TOVAR KONTAKTY KONTAKTY SITEMAPA SITEMAPA" ". . . . . . . ." ". . . . . . . ." ". KTOVAR1 KTOVAR1 KTOVAR2 KTOVAR2 KTOVAR3 KTOVAR3 ." ". . KCENA1 . KCENA2 . KCENA3 ." ". KPOPIS1 KPOPIS1 KPOPIS2 KPOPIS2 KPOPIS3 KPOPIS3 ." ". . . . . . . ." "PASIK PASIK PASIK PASIK PASIK PASIK PASIK PASIK";
+  min-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
+  width:50%; 
+}
+.grid-TOVAR-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px 75px 100px 510px 10px 50px 100px 75px;
+  grid-template-areas: "LOGO HLADAT HLADAT KOSIK" "PROFIL TOVAR KONTAKTY SITEMAPA" ". . . ." ". PTOVAR-1 PTOVAR-1 ." ". . . ." ". PPOPIS-1 PPOPIS-1 ." ". . . ." "PASIK PASIK PASIK PASIK";
+  min-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
+  width:50%; 
+}
+.grid-TOVAR-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px 75px 100px 510px 10px 50px 100px 75px;
+  grid-template-areas: "LOGO HLADAT HLADAT KOSIK" "PROFIL TOVAR KONTAKTY SITEMAPA" ". . . ." ". PTOVAR-2 PTOVAR-2 ." ". . . ." ". PPOPIS-2 PPOPIS-2 ." ". . . ." "PASIK PASIK PASIK PASIK";
+  min-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
+  width:50%; 
+}
+.grid-TOVAR-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 75px 75px 100px 510px 10px 50px 100px 75px;
+  grid-template-areas: "LOGO HLADAT HLADAT KOSIK" "PROFIL TOVAR KONTAKTY SITEMAPA" ". . . ." ". PTOVAR-3 PTOVAR-3 ." ". . . ." ". PPOPIS-3 PPOPIS-3 ." ". . . ." "PASIK PASIK PASIK PASIK";
+  min-width: 1024px;
+  max-width: 1440px;
+  margin: auto;
+  width:50%; 
+}
+.LOGO { grid-area: LOGO;background-color:#D18AA4; 
+}
+.LOGO img {
+    width: 65%;
+    margin-top: 0px;
+    margin-left: 45px;
+}
+.HLADAT { grid-area: HLADAT;background-color:#D18AA4; }
+.HLADAT:hover{
+  background-color:#d69fc3;
+}
+.HLADAT img{
+  width: 50%;
+  margin-top: 5px;
+  margin-left: 25%;
+  border-radius: 100px;
+}
+.KOSIK { grid-area: KOSIK;background-color:#D18AA4; }
+.fas {
+  font-size: 70px;
+  text-align: center;
+  margin-left: 80px;
+  margin-top: 2.5px;
+}
+.KOSIK:hover{
+  background-color:#d69fc3
+}
+.PROFIL { grid-area: PROFIL;
+  background-color:#D18AA4;
+  font-family: 'Dancing Script', cursive;
+  text-align: center; 
+}
+.PROFIL:hover{
+  background-color:#d69fc3;
+}
+ .PROFIL a{
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+ }
+.PROFIL p{
+  margin-top: 18px;
+}
+.TOVAR { grid-area: TOVAR;
+   background-color:#D18AA4;
+   font-family: 'Dancing Script', cursive;
+   text-align: center;
+   } 
+   .TOVAR:hover{
+    background-color:#d69fc3;
+   }
+  .TOVAR a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+ }
+ .TOVAR p{
+  margin-top: 18px;
+ }
+
+.KONTAKTY { grid-area: KONTAKTY; 
+  background-color:#D18AA4; 
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+  .KONTAKTY:hover{
+    background-color:#d69fc3;
+  }
+  .KONTAKTY p{
+    margin-top: 18px;
+  }
+  /*obsah podstranky kontakty*/
+  .KONTAKTY a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+  }
+  .image2{
+    float: left;
+    border-radius: 200px;
+    margin-left: 100px;
+  }
+  .clen{
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 25px;
+    padding-top: 30px;
+    margin-left: 100px;
+    margin-top:25px;
+    }
+    .mapa{
+      margin-left: 20px;
+    }
+    .obchod{
+      margin-left: 650px;
+      margin-top: -400px;
+      font-size: 25px
+    }
+.SITEMAPA { grid-area: SITEMAPA;
+  background-color:#D18AA4; 
+  font-family: 'Dancing Script', cursive;
+  text-align: center; 
+}
+.SITEMAPA:hover{
+  background-color:#d69fc3;
+}
+  .SITEMAPA a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+  }
+  .SITEMAPA p{
+    margin-top: 18px;
+  }
+  .sitemapicka{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    color: black;
+  }
+  .sitemapicka:hover{
+    color: white;
+  }
+.AKCIE { grid-area: AKCIE; background-color:#d69fc3 }
+.onas{
+  margin-bottom: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 30px;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  color: #a8c1c8;
+  font-family: 'Lora', serif;
+  background-color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.OT { grid-area: OT;
+  background-color:#D18AA4;
+text-align: center; }
+.INDEXOBRAZKY { grid-area: INDEXOBRAZKY; background-color:#d69fc3}
+.INDEXOBRAZKY img{
+  width: 100%;
+}
+.PASIK { grid-area: PASIK;background-color:#D18AA4; }
+.navrat{
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-family: 'Lora', serif;
+  color: white;}
+  .finfo{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Lora', serif;
+    color: white;
+  }
+.OBRAZOKSITEMAPA { grid-area: OBRAZOKSITEMAPA; background-color:#d69fc3; }
+.KONTAKT { grid-area: KONTAKT; background-color:#d69fc3;}
+
+/* podstranka TOVAR POZOR*/
+.TOVAR1 { grid-area: TOVAR1; background-color:#d69fc3; 
+border-radius: 20PX;
+border:1px solid white;
+}
+.TOVAR1 img{
+width: 100%;
+border-radius: 20px;
+}
+.TOVAR2{ grid-area: TOVAR2; background-color:#d69fc3; 
+  border-radius: 20PX;
+  border:1px solid white; 
+  }
+  .TOVAR2 img{
+    width: 100%;
+    border-radius: 20px;
+    }
+.TOVAR3 { grid-area: TOVAR3; background-color:#d69fc3; 
+  border-radius: 20PX;
+  border:1px solid white; 
+  }
+  .TOVAR3 img{
+    width: 100%;
+    border-radius: 20px;
+    }
+.POPIS1 { grid-area: POPIS1; 
+  background-color:#d69fc3; 
+  border-radius: 20PX;
+  border:1px solid white;
+ }
+ .POPIS1 p{
+  text-decoration: none;
+  text-align: center;
+  color:black;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  margin-top: 4px;
+ }
+.POPIS2 { grid-area: POPIS2;
+  background-color:#d69fc3; 
+  border-radius: 20PX;
+  border:1px solid white; 
+   }
+   .POPIS2 p{
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    margin-top: 4px;
+   }
+.POPIS3 { grid-area: POPIS3;
+  background-color:#d69fc3; 
+  border-radius: 20PX;
+  border:1px solid white; 
+ }
+ .POPIS3 p{
+  text-decoration: none;
+  text-align: center;
+  color:black;
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  margin-top: 4px;
+ }
+
+/*KOSIK TOVAR POZOR*/
+
+.KTOVAR1 { grid-area: KTOVAR1; background-color:#d69fc3; 
+border-radius: 20px;
+border:1px solid white;
+}
+.KTOVAR1 img{
+  width: 100%;
+  border-radius: 20px;
+  }
+
+.KTOVAR2 { grid-area: KTOVAR2; background-color:#d69fc3;
+  border-radius: 20px;
+  border:1px solid white;
+}
+.KTOVAR2 img{
+  width: 100%;
+  border-radius: 20px;
+  }
+
+.KTOVAR3 { grid-area: KTOVAR3; background-color:#d69fc3;
+  border-radius: 20px;
+  border:1px solid white;
+}
+.KTOVAR3 img{
+  width: 100%;
+  border-radius: 20px;
+  }
+
+.KCENA1 { grid-area: KCENA1;
+  background-color:#d69fc3;
+  border-radius: 20px;
+  border:1px solid white;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+ text-align: center; 
+}
+.KCENA2 { grid-area: KCENA2;background-color:#d69fc3;
+  border-radius: 20px;
+  border:1px solid white;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+ text-align: center; 
+
+ }
+.KCENA3 { grid-area: KCENA3;background-color:#d69fc3; 
+  border-radius: 20px;
+  border:1px solid white;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+ text-align: center; 
+
+}
+.KPOPIS1 { grid-area: KPOPIS1;background-color:#d69fc3; 
+  border-radius: 20px;
+  border:1px solid white;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+ text-align: center; 
+}
+.KPOPIS2 { grid-area: KPOPIS2; background-color:#d69fc3;
+  border-radius: 20px;
+  border:1px solid white;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+ text-align: center; 
+}
+.KPOPIS3 { grid-area: KPOPIS3;background-color:#d69fc3; 
+  border-radius: 20px;
+  border:1px solid white;
+  color: black;
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+ text-align: center; 
+}
+
+/*TOVAR PODSTRANKY*/
+.PTOVAR-1 { grid-area: PTOVAR-1;
+  background-color:#d69fc3; 
+  border-radius: 20PX;
+  border:1px solid white; }
+
+  .PTOVAR-1 img{
+    width: 100%;
+    border-radius: 20px;
+    }
+.PTOVAR-2 { grid-area: PTOVAR-2;
+  background-color:#d69fc3; 
+  border-radius: 20PX;
+  border:1px solid white;}
+  .PTOVAR-2 img{
+    width: 100%;
+    border-radius: 20px;
+    }
+
+.PTOVAR-3 { grid-area: PTOVAR-3;
+      background-color:#d69fc3; 
+     border-radius: 20PX;
+     border:1px solid white;}
+  .PTOVAR-3 img{
+       width: 100%;
+       border-radius: 20px;
+       }
+   
+ .PPOPIS-1 { grid-area: PPOPIS-1;
+  background-color:#d69fc3;
+  border:1px solid white;
+  border-radius: 10PX; }
+
+  .PPOPIS-1 a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    margin-left: 32%;
+  }
+
+.PPOPIS-2 { grid-area: PPOPIS-2;
+  background-color:#d69fc3;
+  border:1px solid white;
+  border-radius: 10PX;  }
+
+  .PPOPIS-2 a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    margin-left: 32%;
+  }
+
+.PPOPIS-3 { grid-area: PPOPIS-3;
+  background-color:#d69fc3;
+  border:1px solid white;
+  border-radius: 10PX;  }
+
+  .PPOPIS-3 a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    margin-left: 32%;
+  }
+.MENU{ display: none;}
+}  
+/*tablet*/
+ @media only screen and (max-width: 1024px) {
+  .grid-index {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 75px 75px 450px 30px 280px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" "AKCIE AKCIE AKCIE AKCIE" "OT OT OT OT" "INDEXOBRAZKY INDEXOBRAZKY INDEXOBRAZKY INDEXOBRAZKY" "PASIK PASIK PASIK PASIK";
+    min-width: 600px;
+    max-width: 1024px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-sitemapa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 500px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" "OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA" "PASIK PASIK PASIK PASIK";
+    min-width: 600px;
+    max-width: 1024px;
+    margin: auto;
+    width:50%;
+  }
+  
+  .grid-kontakty {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 1400px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" "KONTAKT KONTAKT KONTAKT KONTAKT" "PASIK PASIK PASIK PASIK";
+    min-width: 600px;
+    max-width: 1024px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-kosik {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 75px 75px 120px 150px 20px 45px 120px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO" "MENU MENU HLADAT HLADAT PROFIL PROFIL KOSIK KOSIK" ". . . . . . . ." ". KTOVAR1 KTOVAR1 KTOVAR2 KTOVAR2 KTOVAR3 KTOVAR3 ." ". . KCENA1 . KCENA2 . KCENA3 ." ". KPOPIS1 KPOPIS1 KPOPIS2 KPOPIS2 KPOPIS3 KPOPIS3 ." ". . . . . . . ." "PASIK PASIK PASIK PASIK PASIK PASIK PASIK PASIK";
+    min-width: 600px;
+    max-width: 1024px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-tovar {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 75px 75px 120px 150px 180px 120px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO" "MENU MENU HLADAT HLADAT PROFIL PROFIL KOSIK KOSIK" ". . . . . . . ." ". TOVAR1 TOVAR1 TOVAR2 TOVAR2 TOVAR3 TOVAR3 ." ". POPIS1 POPIS1 POPIS2 POPIS2 POPIS3 POPIS3 ." ". . . . . . . ." "PASIK PASIK PASIK PASIK PASIK PASIK PASIK PASIK";
+    min-width: 600px;
+    max-width: 1024px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-TOVAR-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 100px 295px 10px 50px 100px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" ". . . ." ". PTOVAR-1 PTOVAR-1 ." ". . . ." ". PPOPIS-1 PPOPIS-1 ." ". . . ." "PASIK PASIK PASIK PASIK";
+    min-width: 600px;
+    max-width: 1024px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-TOVAR-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 100px 295px 10px 50px 100px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" ". . . ." ". PTOVAR-2 PTOVAR-2 ." ". . . ." ". PPOPIS-2 PPOPIS-2 ." ". . . ." "PASIK PASIK PASIK PASIK";
+    min-width: 600px;
+    max-width: 1024px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-TOVAR-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 75px 100px 295px 10px 50px 100px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" ". . . ." ". PTOVAR-3 PTOVAR-3 ." ". . . ." ". PPOPIS-3 PPOPIS-3 ." ". . . ." "PASIK PASIK PASIK PASIK";
+    min-width: 600px;
+    max-width: 1024px;
+    margin: auto;
+    width:50%;
+  }
+  .LOGO { grid-area: LOGO;background-color:#D18AA4; }
+  .LOGO img { 
+    width: 30%;
+    margin-top: 0px;
+    margin-left: 200px;
+   }
+  
+  .HLADAT { grid-area: HLADAT;background-color:#D18AA4;  }
+  .HLADAT:hover{
+    background-color:#d69fc3}
+  .HLADAT img{
+    width: 100%;
+    margin-top: 18px;
+    border-radius: 20px;
+  }
+  
+  .PROFIL { grid-area: PROFIL;
+    background-color:#D18AA4;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+   }
+   .PROFIL:hover{
+    background-color:#d69fc3;
+   }
+   .PROFIL a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+  }
+  .PROFIL p{
+    margin-top: 7px;
+  }
+    .KOSIK { grid-area: KOSIK;background-color:#D18AA4; }
+    .fas {
+      font-size: 70px;
+      text-align: center;
+      margin-left: 35px;
+      margin-top: 2.5px;
+    }
+    .KOSIK:hover{ background-color:#d69fc3;}
+    .AKCIE { grid-area: AKCIE; background-color:#d69fc3; }
+    .onas{
+      margin-bottom: 0px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 15px;
+      font-family: 'Lora', serif;
+      font-size: 16px;
+    }
+    h2{
+      text-align: center;
+      font-size: 30px;
+      color: #a8c1c8;
+      font-family: 'Lora', serif;
+      background-color: white;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+    .OT { grid-area: OT;background-color:#D18AA4;text-align: center; }
+  
+  .INDEXOBRAZKY { grid-area: INDEXOBRAZKY; background-color:#d69fc3;}
+  .INDEXOBRAZKY img{
+    width: 100%;
+  }
+  
+  .PASIK { grid-area: PASIK;background-color:#D18AA4; }
+.navrat{
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-family: 'Lora', serif;
+  color: white;}
+  .finfo{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Lora', serif;
+    color: white;
+  }
+  
+  .MENU { grid-area: MENU; background-color:#D18AA4; }
+  
+  /*VYSKAKOVACIA SRANDA ZACIATOK*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #a8c1c8;
+  }
+  
+  li {float: left; }
+  
+  li a, .menu {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 22.5px 50px;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+  }
+  
+  li a:hover, .dropdown:hover .menu {
+    background-color:#d69fc3;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+ 
+li.dropdown { display: inline-block;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 149px;
+  box-shadow:  #a8c1c8;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 25px;
+  text-align: center;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {display: block;}
+/*VYSKAKOVACIA SRANDA KONIEC*/
+  .OBRAZOKSITEMAPA { grid-area: OBRAZOKSITEMAPA;background-color:#d69fc3; }
+  .sitemapicka{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    color: black;
+  }
+  .sitemapicka:hover{
+    color: white;
+  }
+
+  .KONTAKT { grid-area: KONTAKT; background-color:#d69fc3;}
+  /*kontakty podstranka tablet*/
+  .KONTAKTY a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+  }
+  .image2{
+    float: left;
+    border-radius: 200px;
+    margin-left: 100px;
+  }
+  .clen{
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 25px;
+    padding-top: 30px;
+    margin-left: 100px;
+    margin-top:25px;
+    }
+    .mapa{
+      margin-left: 0px;
+    }
+    .obchod{
+      text-align: center;
+      font-size: 25px
+    }
+
+  /*KOSIK TOVAR POZOR*/
+  .KTOVAR1 { grid-area: KTOVAR1;  }
+  .KTOVAR1 img{
+    width: 100%;
+    border-radius: 20px;
+    }
+
+  .KTOVAR2 { grid-area: KTOVAR2;}
+  .KTOVAR2 img{
+    width: 100%;
+    border-radius: 20px;
+    }
+  .KTOVAR3 { grid-area: KTOVAR3; }
+  .KTOVAR3 img{
+    width: 100%;
+    border-radius: 20px;
+    }
+  .KCENA1 { grid-area: KCENA1;background-color:#d69fc3;
+    border-radius: 10px;
+    border:1px solid white;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 12px;
+   text-align: center;  }
+  
+  .KCENA2 { grid-area: KCENA2;background-color:#d69fc3;
+    border-radius: 10px;
+    border:1px solid white;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 12px;
+   text-align: center;  }
+  
+  .KCENA3 { grid-area: KCENA3;background-color:#d69fc3;
+    border-radius: 10px;
+    border:1px solid white;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 12px;
+   text-align: center;  }
+  
+  .KPOPIS1 { grid-area: KPOPIS1;background-color:#d69fc3;
+    border-radius: 20px;
+    border:1px solid white;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 33px;
+   text-align: center;  }
+  
+  .KPOPIS2 { grid-area: KPOPIS2; background-color:#d69fc3;
+    border-radius: 20px;
+    border:1px solid white;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 33px;
+   text-align: center; }
+  
+  .KPOPIS3 { grid-area: KPOPIS3;background-color:#d69fc3;
+    border-radius: 20px;
+    border:1px solid white;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 33px;
+   text-align: center;  }
+
+  /* podstranka TOVAR POZOR*/
+  .TOVAR1 { grid-area: TOVAR1; 
+    background-color:#d69fc3; 
+    border-radius: 20PX;
+    border:1px solid white;
+    }
+    .TOVAR1 img {
+      width: 100%;
+      border-radius: 20px;
+    }
+    
+    .TOVAR2{ grid-area: TOVAR2;
+       background-color:#d69fc3; 
+      border-radius: 20PX;
+      border:1px solid white;
+      }
+      .TOVAR2 img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    
+    .TOVAR3 { grid-area: TOVAR3;
+       background-color:#d69fc3; 
+      border-radius: 20PX;
+      border:1px solid white; 
+      }
+      .TOVAR3 img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    
+      .POPIS1 { grid-area: POPIS1; 
+        background-color:#d69fc3; 
+        border-radius: 20PX;
+        border:1px solid white;
+       }
+      
+       .POPIS1 p{
+        text-decoration: none;
+        text-align: center;
+        color:black;
+        font-family: 'Lora', serif;
+        font-size: 15px;
+        margin-top: 4px;
+       }
+    
+       .POPIS2 { grid-area: POPIS2; 
+        background-color:#d69fc3; 
+        border-radius: 20PX;
+        border:1px solid white;
+       }
+      
+       .POPIS2 p{
+        text-decoration: none;
+        text-align: center;
+        color:black;
+        font-family: 'Lora', serif;
+        font-size: 15px;
+        margin-top: 4px;
+       }
+       .POPIS3 { grid-area: POPIS3; 
+        background-color:#d69fc3; 
+        border-radius: 20PX;
+        border:1px solid white;
+       }
+      
+       .POPIS3 p{
+        text-decoration: none;
+        text-align: center;
+        color:black;
+        font-family: 'Lora', serif;
+        font-size: 15px;
+        margin-top: 4px;
+       }
+
+   /*TOVARY PODSTRANKA 1*/
+ .PTOVAR-1 { grid-area: PTOVAR-1;
+   background-color:#d69fc3;
+   border-radius: 20PX;
+   border:1px solid white;}
+ 
+   .PTOVAR-1 img{
+    width: 100%;
+    border-radius: 20px;
+    }   
+
+ .PPOPIS-1 { grid-area: PPOPIS-1;
+  background-color:#d69fc3;
+   border-radius: 10PX;
+  border:1px solid white;}
+
+  .PPOPIS-1 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    margin-left: 20%;
+  }
+
+  .PTOVAR-2 { grid-area: PTOVAR-2;
+    background-color:#d69fc3;
+    border-radius: 20PX;
+    border:1px solid white;}
+
+    .PTOVAR-2 img{
+      width: 100%;
+      border-radius: 20px;
+      }    
+ 
+  .PPOPIS-2 { grid-area: PPOPIS-2;
+   background-color:#d69fc3;
+    border-radius: 10PX;
+   border:1px solid white;}
+
+   .PPOPIS-2 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    margin-left: 20%;
+  }
+   .PTOVAR-3 { grid-area: PTOVAR-3;
+    background-color:#d69fc3;
+    border-radius: 20PX;
+    border:1px solid white;}
+
+    .PTOVAR-3 img{
+      width: 100%;
+      border-radius: 20px;
+      }   
+ 
+  .PPOPIS-3 { grid-area: PPOPIS-3;
+   background-color:#d69fc3;
+    border-radius: 10PX;
+   border:1px solid white;}
+
+   .PPOPIS-3 a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px;
+    margin-left: 20%;}
+
+  .SITEMAPA{ display: none;}
+  .KONTAKTY{ display: none;}
+  .TOVAR{display: none;}
+}
+/*mobil*/
+ @media only screen and (max-width: 600px) {
+  .grid-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 40px 525px 20px 130px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" "AKCIE AKCIE AKCIE AKCIE" "OT OT OT OT" "INDEXOBRAZKY INDEXOBRAZKY INDEXOBRAZKY INDEXOBRAZKY" "PASIK PASIK PASIK PASIK";
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-sitemapa {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 40px 500px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" "OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA OBRAZOKSITEMAPA" "PASIK PASIK PASIK PASIK";
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-kontakty {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 75px 40px 500px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" "KONTAKT KONTAKT KONTAKT KONTAKT" "PASIK PASIK PASIK PASIK";
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-tovar {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 75px 40px 50px 70px 180px 50px 70px 140px 50px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO" "MENU MENU HLADAT HLADAT PROFIL PROFIL KOSIK KOSIK" ". . . . . . . ." ". TOVAR1 TOVAR1 . . TOVAR2 TOVAR2 ." ". POPIS1 POPIS1 . . POPIS2 POPIS2 ." ". . . . . . . ." ". TOVAR3 TOVAR3 . . . . ." ". POPIS3 POPIS3 . . . . ." ". . . . . . . ." "PASIK PASIK PASIK PASIK PASIK PASIK PASIK PASIK";
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-kosik {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 75px 40px 50px 75px 50px 50px 75px 50px 50px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO" "MENU MENU HLADAT HLADAT PROFIL PROFIL KOSIK KOSIK" ". . . . . . . ." ". KTOVAR1 KTOVAR1 . . KTOVAR2 KTOVAR2 ." ". KPOPIS1 KCENA1 . . KPOPIS2 KCENA2 ." ". . . . . . . ." ". KTOVAR3 KTOVAR3 . . . . ." ". KPOPIS3 KCENA3 . . . . ." ". . . . . . . ." "PASIK PASIK PASIK PASIK PASIK PASIK PASIK PASIK";
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-TOVAR-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 40px 100px 130px 15px 30px 100px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" ". . . ." ". PTOVAR-1 PTOVAR-1 ." ". . . ." ". PPOPIS-1 PPOPIS-1 ." ". . . ." "PASIK PASIK PASIK PASIK";
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-TOVAR-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 40px 100px 130px 15px 30px 100px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" ". . . ." ". PTOVAR-2 PTOVAR-2 ." ". . . ." ". PPOPIS-2 PPOPIS-2 ." ". . . ." "PASIK PASIK PASIK PASIK";
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    width:50%;
+  }
+  .grid-TOVAR-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 70px 40px 100px 130px 15px 30px 100px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO" "MENU HLADAT PROFIL KOSIK" ". . . ." ". PTOVAR-3 PTOVAR-3 ." ". . . ." ". PPOPIS-3 PPOPIS-3 ." ". . . ." "PASIK PASIK PASIK PASIK";
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    width:50%;
+  }
+  
+
+  .LOGO { grid-area: LOGO;background-color:#D18AA4; }
+  .LOGO img {
+     width: 53%;
+    margin-top: 0px;
+    margin-left: 65px;
+   }
+
+  .MENU { grid-area: MENU;background-color:#D18AA4;
+   }
+   /*VYSKAKOVACIA SRANDA ZACIATOK*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #a8c1c8;
+  }
+  li { float: left; }
+  
+  li a, .menu {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 11px 20px;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+  }
+  
+  li a:hover, .dropdown:hover .menu {
+    background-color:#d69fc3;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+li.dropdown { display: inline-block;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10px;
+  box-shadow:  #a8c1c8;
+}
+.dropdown-content a {
+  color: black;
+  padding: 11px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 9px;
+  text-align: center;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+/*VYSKAKOVACIA SRANDA KONIEC*/
+  
+  .HLADAT { grid-area: HLADAT;background-color:#D18AA4;  }
+  .HLADAT:hover{
+    background-color:#d69fc3;
+  }
+  .HLADAT img{
+    width: 100%;
+    margin-top: 10.5px;
+    border-radius: 20px;
+  }
+  .PROFIL { grid-area: PROFIL;
+    background-color:#D18AA4;
+    font-family: 'Dancing Script', cursive;
+    text-align: center; }
+   .PROFIL a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    }
+    .PROFIL p{ margin-top: 2px;}
+  
+  .KOSIK { grid-area: KOSIK;background-color:#D18AA4;  }
+  .fas {
+    font-size: 35px;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 2.5px;
+  }
+  .PASIK { grid-area: PASIK;background-color:#D18AA4; }
+.navrat{
+  float: right;
+  font-size: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-family: 'Lora', serif;
+  color: white;}
+  .finfo{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Lora', serif;
+    color: white;
+  }
+
+  .AKCIE { grid-area: AKCIE; background-color:#d69fc3 }
+  .onas{
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    
+  }
+    h2{
+      text-align: center;
+      font-size: 16px;
+      color: #a8c1c8;
+      font-family: 'Lora', serif;
+      background-color: white;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+  .OT { grid-area: OT; background-color:#D18AA4 }
+
+  .INDEXOBRAZKY { grid-area: INDEXOBRAZKY;background-color:#d69fc3 }
+  .INDEXOBRAZKY img{ width: 100%; }
+
+  .KONTAKT { grid-area: KONTAKT;background-color:#d69fc3}
+  /*podstranka kontakty telefon*/
+  .KONTAKTY a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+  .image2{display: none;}
+  .clen{
+   text-align: center;
+   font-size: 12px;
+   margin-left: 0px;
+   margin-top: -20px;
+    }
+    .mapa{ display: none;}
+    .obchod{
+      text-align: center;
+      margin-left: px;
+      margin-top: -10px;
+      font-size: 12px;
+    }
+  .OBRAZOKSITEMAPA { grid-area: OBRAZOKSITEMAPA;background-color:#d69fc3 }
+  
+
+ /* podstranka TOVAR POZOR*/
+
+ .TOVAR1 { grid-area: TOVAR1; 
+  background-color:#d69fc3; 
+  border-radius: 20PX;
+  border:1px solid white;
+  }
+ 
+  .TOVAR2{ grid-area: TOVAR2;
+     background-color:#d69fc3; 
+    border-radius: 20PX;
+    border:1px solid white;
+    }
+  .TOVAR3 { grid-area: TOVAR3;
+     background-color:#d69fc3; 
+    border-radius: 20PX;
+    border:1px solid white; 
+    }
+    .POPIS1 { grid-area: POPIS1; 
+      background-color:#d69fc3; 
+      border-radius: 10PX;
+      border:1px solid white;
+     }
+     .POPIS1 p{
+      text-decoration: none;
+      text-align: center;
+      color:black;
+      font-family: 'Lora', serif;
+      font-size: 10px;
+      margin-top: 4px;
+     }
+     .POPIS2 { grid-area: POPIS2; 
+      background-color:#d69fc3; 
+      border-radius: 10PX;
+      border:1px solid white;
+     }
+     .POPIS2 p{
+      text-decoration: none;
+      text-align: center;
+      color:black;
+      font-family: 'Lora', serif;
+      font-size: 10px;
+      margin-top: 4px;
+     }
+     .POPIS3 { grid-area: POPIS3; 
+      background-color:#d69fc3; 
+      border-radius: 10PX;
+      border:1px solid white;
+     }
+     .POPIS3 p{
+      text-decoration: none;
+      text-align: center;
+      color:black;
+      font-family: 'Lora', serif;
+      font-size: 10px;
+      margin-top: 4px;
+     }
+ /*KOSIK TOVAR POZOR*/
+ .KTOVAR1 { grid-area: KTOVAR1;  }
+ .KTOVAR1 img{width: 100%;}
+ .KTOVAR2 { grid-area: KTOVAR2; }
+ .KTOVAR2 img{width: 100%;}
+ .KTOVAR3 { grid-area: KTOVAR3; }
+ .KTOVAR3 img{width: 100%;}
+ .KCENA1 { grid-area: KCENA1;background-color:#d69fc3; }
+ .KCENA2 { grid-area: KCENA2;background-color:#d69fc3; }
+ .KCENA3 { grid-area: KCENA3;background-color:#d69fc3; }
+
+ .KPOPIS1 { grid-area: KPOPIS1;background-color:#d69fc3; 
+text-align: center;
+font-size: 5px;
+border-radius: 10px;
+}
+ .KPOPIS2 { grid-area: KPOPIS2; background-color:#d69fc3;
+  text-align: center;
+  font-size: 5px;
+  border-radius: 10px;}
+ 
+ .KPOPIS3 { grid-area: KPOPIS3;background-color:#d69fc3;
+  text-align: center;
+  font-size: 5px;
+  border-radius: 10px; }
+
+ /*TOVARY PODSTRANKA 1*/
+ .PTOVAR-1 { grid-area: PTOVAR-1; background-color:#d69fc3;}
+ .PPOPIS-1 { grid-area: PPOPIS-1;background-color:#d69fc3; }
+
+ .PPOPIS-1 a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  margin-left: 10%;
+}
+ .PTOVAR-2 { grid-area: PTOVAR-2; background-color:#d69fc3;}
+ .PPOPIS-2 { grid-area: PPOPIS-2;background-color:#d69fc3; }
+
+ .PPOPIS-2 a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  margin-left: 10%;
+}
+
+ .PTOVAR-3 { grid-area: PTOVAR-3; background-color:#d69fc3;}
+.PPOPIS-3 { grid-area: PPOPIS-3;background-color:#d69fc3; }
+
+ .PPOPIS-3 a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 19px;
+  margin-left: 10%;
+}
+}
+/*tlač*/
+@media print {
+
+  .grid-kosik {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 75px 40px 50px 220px 50px 50px 220px 50px 50px 50px;
+    grid-template-areas: "LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO" "MENU MENU HLADAT HLADAT PROFIL PROFIL KOSIK KOSIK" ". . . . . . . ." ". KTOVAR1 KTOVAR1 . . KTOVAR2 KTOVAR2 ." ". KPOPIS1 KCENA1 . . KPOPIS2 KCENA2 ." ". . . . . . . ." ". KTOVAR3 KTOVAR3 . . . . ." ". KPOPIS3 KCENA3 . . . . ." ". . . . . . . ." "PASIK PASIK PASIK PASIK PASIK PASIK PASIK PASIK";
+    width:100%;
+  }
+
+.LOGO{grid-area: LOGO;
+  display: none;
+}
+.HLADAT{ grid-area: HLADAT;
+  display: none;
+}
+.KOSIK{grid-area: KOSIK;
+  display: none;
+}
+.PROFIL{grid-area: PROFIL;
+  display: none;
+}
+.SITEMAPA{grid-area: SITEMAPA;
+  display: none;
+}
+.MENU{grid-area: MENU;
+  display: none;
+}
+.TOVAR{grid-area: TOVAR;
+display: none;
+}
+.KONTAKTY{grid-area: KONTAKTY;
+  display: none;
+}
+.PASIK{grid-area: PASIK;
+  display: none;
+}
+
+.KTOVAR1 { grid-area: KTOVAR1; ; 
+  
+  }
+  .KTOVAR1 img{
+    width: 110%;
+    border-radius: 20px;
+    }
+  
+  .KTOVAR2 { grid-area: KTOVAR2; ;
+    
+  }
+  .KTOVAR2 img{
+    width: 110%;
+    border-radius: 20px;
+    }
+  
+  .KTOVAR3 { grid-area: KTOVAR3; ;
+    
+  }
+  .KTOVAR3 img{
+    width: 110%;
+    border-radius: 20px;
+    }
+  
+  .KCENA1 { grid-area: KCENA1;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+   text-align: center; 
+  }
+  
+  .KCENA2 { grid-area: KCENA2;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+   text-align: center; 
+  
+   }
+  
+  .KCENA3 { grid-area: KCENA3; 
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+   text-align: center; 
+  
+  }
+  
+  .KPOPIS1 { grid-area: KPOPIS1; 
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+   text-align: center; 
+  }
+  
+  .KPOPIS2 { grid-area: KPOPIS2;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+   text-align: center; 
+  }
+  
+  .KPOPIS3 { grid-area: KPOPIS3;
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+   text-align: center; 
+  }
+}
+
+
+
+
+
+
+
